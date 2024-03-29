@@ -62,20 +62,21 @@ internal class UISystem : ModSystem
 		}
 	}
 
+	private bool DrawUI()
+	{
+		// if the player is talking to the Angler, the new shop isn't opened and dialogue tweak mod isn't active.
+		if (Main.LocalPlayer.talkNPC != -1 && Main.npc[Main.LocalPlayer.talkNPC].type == NPCID.Angler && Main.npcShop != 99 && !dialogueTweakLoaded) {
+			userInterface?.Draw(Main.spriteBatch, lastUpdateUiGameTime);
+		}
+		return true;
+	}
+
 	public override void ModifyInterfaceLayers(List<GameInterfaceLayer> layers)
 	{
 		int mouseTextIndex = layers.FindIndex(layer => layer.Name.Equals("Vanilla: Mouse Text"));
-		if (mouseTextIndex != -1) {
-			layers.Insert(mouseTextIndex, new LegacyGameInterfaceLayer(
-				"AnglerShop: UI",
-				delegate
-				{
-					// if the player is talking to the Angler, the new shop isn't opened and dialogue tweak mod isn't active.
-					if (Main.LocalPlayer.talkNPC != -1 && Main.npc[Main.LocalPlayer.talkNPC].type == NPCID.Angler && Main.npcShop != 99 && !dialogueTweakLoaded) {
-						userInterface?.Draw(Main.spriteBatch, lastUpdateUiGameTime);
-					}
-					return true;
-				}, InterfaceScaleType.UI));
+		if (mouseTextIndex == -1) {
+			return;
 		}
+		layers.Insert(mouseTextIndex, new LegacyGameInterfaceLayer("AnglerShop: UI", DrawUI, InterfaceScaleType.UI));
 	}
 }

@@ -1,6 +1,5 @@
 using Terraria;
 using Terraria.DataStructures;
-using Terraria.GameContent.UI;
 using Terraria.ModLoader;
 using Terraria.ID;
 
@@ -13,8 +12,6 @@ internal class NoFishingQuests : Mod
 	
 	public override void Load()
 	{
-		AnglerCoin.Id = CustomCurrencyManager.RegisterCurrency(new AnglerCoin(ModContent.ItemType<AnglerCoinItem>(), 999));
-
 		On_Player.GetAnglerReward += AddAnglerCoinToQuestReward;
 		
 		base.Load();

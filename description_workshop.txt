@@ -21,6 +21,13 @@ You can contact me over discord or e-mail (see my github profile). Credit means 
 [b]RighteousRyan[/b] for giving me code that allows the angler coin to be placed into the coin slot! 
 
 [h2]Recent Changes:[/h2]
+[h3]v3.2[/h3]
+[list]
+[*] Added Chum Bucket, which is only sold during a blood moon
+[*] Made bottomless honey bucket and honey absorbant sponge only buyable after Queen Bee has been killed
+[*] Added a configureable multiplier to change the price of items bought with gold coins
+[/list]
+
 [h3]v3.1[/h3]
 [list]
 [*] Added a config option to set the amount of angler coins you get per quest

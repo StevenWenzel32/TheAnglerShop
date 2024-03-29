@@ -21,6 +21,11 @@ Crapsky233 for adding support for the "Dialogue Panel Rework" mod!
 RighteousRyan for giving me code that allows the angler coin to be placed into the coin slot! 
 
 Recent Changes:
+v3.2
+- Added Chum Bucket, which is only sold during a blood moon
+- Made bottomless honey bucket and honey absorbant sponge only buyable after Queen Bee has been killed
+- Added a configureable multiplier to change the price of items bought with gold coins
+
 v3.1
 - Added a config option to set the amount of angler coins you get per quest
 

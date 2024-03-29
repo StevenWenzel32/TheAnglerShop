@@ -1,5 +1,7 @@
 Mods: {
 	NoFishingQuests: {
+		Currencies.AnglerCoin: Angler Münzen
+
 		Items: {
 			AnglerCoinItem: {
 				DisplayName: Angler Münze
@@ -17,13 +19,18 @@ Mods: {
 				DisplayName: Einstellungen
 
 				minAnglerCoins: {
-					// Label: min Angler Coins
-					// Tooltip: ""
+					Label: Min. Angler Münzen
+					Tooltip: Minimale Anzahl an Angler Münzen, die man pro Quest bekommt.
 				}
 
 				maxAnglerCoins: {
-					// Label: max Angler Coins
-					// Tooltip: ""
+					Label: Max. Angler Münzen
+					Tooltip: Maximale Anzahl an Angler Münzen, die man pro Quest bekommt.
+				}
+
+				goldMultiplier: {
+					Label: Goldpreisfaktor
+					Tooltip: Ein Faktor zur Änderung des Preises beim Kauf mit Goldmünzen.
 				}
 			}
 		}

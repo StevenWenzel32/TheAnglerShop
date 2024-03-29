@@ -22,6 +22,12 @@ public class Config : ModConfig
 	[Slider]
 	[Range(1, 10)]
 	public int maxAnglerCoins;
+	
+	[DefaultValue(2)]
+	[Slider]
+	[Range(0.5f, 4f)]
+	[ReloadRequired]
+	public float goldMultiplier;
 
 	public override void OnChanged()
 	{

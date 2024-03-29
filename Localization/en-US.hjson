@@ -1,5 +1,7 @@
 Mods: {
 	NoFishingQuests: {
+		Currencies.AnglerCoin: angler coins
+
 		Items: {
 			AnglerCoinItem: {
 				DisplayName: Angler Coin
@@ -17,13 +19,18 @@ Mods: {
 				DisplayName: Config
 
 				minAnglerCoins: {
-					Label: min Angler Coins
-					Tooltip: ""
+					Label: Max. Angler coins
+					Tooltip: Minimum amount of Angler coins you get per Quest
 				}
 
 				maxAnglerCoins: {
-					Label: max Angler Coins
-					Tooltip: ""
+					Label: Min. Angler coins
+					Tooltip: Maximal amount of Angler coins you get per Quest
+				}
+
+				goldMultiplier: {
+					Label: Gold price multiplier
+					Tooltip: A multiplier to change the price of items when buying with gold coins
 				}
 			}
 		}

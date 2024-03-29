@@ -14,7 +14,14 @@ RighteousRyan for giving me code that allows the angler coin to be placed into t
 Leave a comment or contact me on my discord if you have any problems: [c/8ab4f8:https://discord.gg/NX4DVzz2v6]
 This mod is open source on GitHub. If you have a GitHub account, please give it a star! (link is the homepage button)
 
+Although the code is open source you are NOT ALLOWED to copy it without permission and credit. 
+You can contact me over discord or e-mail (see my github profile). Credit means my name in your mod's description and/or adding me as a co-author.
+
 Recent Changes:
+v3.0
+- Seperated the shop into two: One for useful items and one for decoration items
+- Added missing shop items
+
 v2.4
 - Updated to 1.4.4
 

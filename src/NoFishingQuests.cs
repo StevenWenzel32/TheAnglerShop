@@ -8,6 +8,9 @@ namespace NoFishingQuests;
 
 internal class NoFishingQuests : Mod
 {
+	public const string ShopName = "Terraria/Angler/Shop";
+	public const string DecorationShopName = "Terraria/Angler/DecorationShop";
+	
 	public override void Load()
 	{
 		AnglerCoin.Id = CustomCurrencyManager.RegisterCurrency(new AnglerCoin(ModContent.ItemType<AnglerCoinItem>(), 999));

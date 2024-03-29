@@ -15,6 +15,16 @@ Mods: {
 				}
 
 				DisplayName: Einstellungen
+
+				minAnglerCoins: {
+					// Label: min Angler Coins
+					// Tooltip: ""
+				}
+
+				maxAnglerCoins: {
+					// Label: max Angler Coins
+					// Tooltip: ""
+				}
 			}
 		}
 	}

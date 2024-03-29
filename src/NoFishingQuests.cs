@@ -15,7 +15,7 @@ internal class NoFishingQuests : Mod
 	{
 		AnglerCoin.Id = CustomCurrencyManager.RegisterCurrency(new AnglerCoin(ModContent.ItemType<AnglerCoinItem>(), 999));
 
-		Terraria.On_Player.GetAnglerReward += AddAnglerCoinToQuestReward;
+		On_Player.GetAnglerReward += AddAnglerCoinToQuestReward;
 		
 		base.Load();
 	}
@@ -23,13 +23,14 @@ internal class NoFishingQuests : Mod
 	private void AddAnglerCoinToQuestReward(On_Player.orig_GetAnglerReward orig, Player self, NPC angler, int questItemType)
 	{
 		orig(self, angler, questItemType);
-			
-		if (!Config.Instance.useCustomCurrency) {
+
+		var config = ModContent.GetInstance<Config>();
+		if (!config.useCustomCurrency) {
 			return;
 		}
 
 		int type = ModContent.ItemType<AnglerCoinItem>();
-		int stack = Main.rand.Next(1, 5);
+		int stack = Main.rand.Next(config.minAnglerCoins, config.maxAnglerCoins);
 		int index = Item.NewItem(new EntitySource_Gift(angler), (int)self.position.X, (int)self.position.Y,
 			self.width, self.height, type, stack, false, 0, true);
 

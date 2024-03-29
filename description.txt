@@ -18,6 +18,9 @@ Although the code is open source you are NOT ALLOWED to copy it without permissi
 You can contact me over discord or e-mail (see my github profile). Credit means my name in your mod's description and/or adding me as a co-author.
 
 Recent Changes:
+v3.1
+- Added a config option to set the amount of angler coins you get per quest
+
 v3.0
 - Seperated the shop into two: One for useful items and one for decoration items
 - Added missing shop items

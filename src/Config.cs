@@ -1,21 +1,33 @@
 ﻿using System.ComponentModel;
 using Terraria.ModLoader.Config;
 
+// ReSharper disable UnassignedField.Global
+
 namespace NoFishingQuests;
 
 public class Config : ModConfig
 {
-	public static Config Instance;
-	
 	public override ConfigScope Mode => ConfigScope.ServerSide;
 	
 	[DefaultValue(false)]
 	[ReloadRequired]
 	public bool useCustomCurrency;
 
-	public override void OnLoaded()
+	[DefaultValue(1)]
+	[Slider]
+	[Range(1, 10)]
+	public int minAnglerCoins;
+
+	[DefaultValue(5)]
+	[Slider]
+	[Range(1, 10)]
+	public int maxAnglerCoins;
+
+	public override void OnChanged()
 	{
-		Instance = this;
-		base.OnLoaded();
+		if (minAnglerCoins > maxAnglerCoins) {
+			minAnglerCoins = maxAnglerCoins;
+		}
+		base.OnChanged();
 	}
 }

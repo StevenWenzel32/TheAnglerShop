@@ -19,6 +19,11 @@ You can contact me over discord or e-mail (see my github profile). Credit means 
 [b]RighteousRyan[/b] for giving me code that allows the angler coin to be placed into the coin slot! 
 
 [h2]Recent Changes:[/h2]
+[h3]v3.1[/h3]
+[list]
+[*] Added a config option to set the amount of angler coins you get per quest
+[/list]
+
 [h3]v3.0[/h3]
 [list]
 [*] Seperated the shop into two: One for useful items and one for decoration items

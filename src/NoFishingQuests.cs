@@ -8,7 +8,7 @@ namespace NoFishingQuests;
 internal class NoFishingQuests : Mod
 {
 	public const string ShopName = "Terraria/Angler/Shop";
-	public const string DecorationShopName = "Terraria/Angler/DecorationShop";
+	public const string DecorationShopName = "Terraria/Angler/Decor";
 	
 	public override void Load()
 	{

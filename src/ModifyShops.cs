@@ -43,7 +43,7 @@ public class ModifyShops : GlobalNPC
 		AddItemToShop(anglerShop, ItemID.HotlineFishingHook, 40, Condition.Hardmode);
 		AddItemToShop(anglerShop, ItemID.ChumBucket, 5, Condition.BloodMoon);
 		AddItemToShop(anglerShop, ItemID.TeleportationPylonOcean, 12, Condition.HappyEnoughToSellPylons);
-		anglerShop.Register();
+		//anglerShop.Register();
 
 		AddItemToShop(anglerDecorShop, ItemID.SeashellHairpin, 4);
 		AddItemToShop(anglerDecorShop, ItemID.MermaidAdornment, 4);
@@ -70,10 +70,10 @@ public class ModifyShops : GlobalNPC
 		AddItemToShop(anglerDecorShop, ItemID.CouchGag, 1);
 		AddItemToShop(anglerDecorShop, ItemID.SilentFish, 1);
 		AddItemToShop(anglerDecorShop, ItemID.TheDuke, 1);
-		anglerDecorShop.Register();
+		//anglerDecorShop.Register();
 	}
 
-	public override void ModifyActiveShop(NPC npc, string shopName, Item[] items)
+	public override void ModifyActiveShop(NPC npc, string shopName, Item?[] items)
 	{
 		if (npc.type != NPCID.Angler) {
 			return;
@@ -100,7 +100,6 @@ public class ModifyShops : GlobalNPC
 		else {
 			item.shopCustomPrice *= (int)(4000 * ModContent.GetInstance<Config>().goldMultiplier);
 		}
-		
 		
 		shop.Add(item, conditions);
 	}

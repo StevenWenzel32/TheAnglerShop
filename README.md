@@ -1,10 +1,19 @@
 # Angler Shop (formally "No Fishing Quests")
-This mod adds a shop button to the Angler NPC. Now you can get your Cell Phone without needing to fish endlessly!
-The Quest button is still there if you'd like to fish.
+This mod adds two shop buttons to the Angler. 
+One Button is to buy utility items and equipment and the other for decorative items and vanity sets.
 
-The items Fin Wings, and Hotline Fishing Hook are only available once in hardmode - just like fishing quest rewards.
+Now you can get your Cell Phone without needing to fish endlessly! For more info visit my homepage!
+The Quest button is still there.
+
+If you still like to complete quests but also want to be able to buy the items, you can toggle a setting in the mod Config.
+This will enable a custom currency that the Angler shop uses and which you can get by completing fishing quests.
+
+The items Fin Wings and Hotline Fishing Hook are only available once in hardmode - just like fishing quest rewards.
 
 If you have any problems, bugs, or suggestions contact me on my [discord](https://discord.gg/NX4DVzz2v6)!
+
+Although the code is open source you are NOT ALLOWED to copy it without permission and credit. 
+You can contact me over discord or e-mail (see my github profile). Credit means my name in your mod's description and/or adding me as a co-author.
 
 ## Special Thanks:
 - **Crapsky233** for adding support for the "Dialogue Panel Rework" mod!
@@ -12,20 +21,17 @@ If you have any problems, bugs, or suggestions contact me on my [discord](https:
 - **RighteousRyan** for giving me code that allows the angler coin to be placed into the coin slot!
 
 ## Recent Changes:
-### v2.3
-- Added a toggleable custom currency, which you get by completing angler quests (1-4 per quest)
+### v3.2
+* Added Chum Bucket, which is only sold during a blood moon
+* Made bottomless honey bucket and honey absorbant sponge only buyable after Queen Bee has been killed
+* Added a configureable multiplier to change the price of items bought with gold coins
 
-### v2.2.1
-- Changed name, description and Icon
-- Some bug fixes and code style changes
+### v3.1
+* Added a config option to set the amount of angler coins you get per quest
 
-### v2.2
-- Added support for the "Dialogue Panel Rework" mod (thanks Crapsky233)
-- Update to dotnet 6
+### v3.0
+* Seperated the shop into two: One for useful items and one for decoration items
+* Added missing shop items
 
-### v2.1.2
-- Fixed pricing bug
-
-### v2.1
-- Removed "New Angler" (may he rest his soul).
-Access the shop through the normal angler now.
+### v2.4
+* Updated to 1.4.4

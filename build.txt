@@ -1,7 +1,5 @@
-author = NotLe0n
-version = 3.2.0.2
-displayName = Angler Shop
+displayName = The Angler Shop
+authors = OnceAKinght, GamerV16, Champygnakx, NotLe0n
+version = 0.2
 hideCode = false
-hideResources = false
-includeSource = false
-homepage = https://github.com/NotLe0n/AnglerShop
+homepage = https://github.com/StevenWenzel32/TheAnglerShop/tree/1.4.4

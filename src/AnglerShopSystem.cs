@@ -35,10 +35,15 @@ public class AnglerShopSystem : ModSystem
 		AddItemToShop(anglerShop, ItemID.WeatherRadio, 15);
 		AddItemToShop(anglerShop, ItemID.Sextant, 15);
 		AddItemToShop(anglerShop, ItemID.FishingBobber, 15);
+  		AddItemToShop(anglerShop, ItemID.LavaFishingHook, 40);
+  		AddItemToShop(anglerShop, ItemID.BottomlessBucket, 40);
+		AddItemToShop(anglerShop, ItemID.SuperAbsorbantSponge, 40);
 		AddItemToShop(anglerShop, ItemID.BottomlessHoneyBucket, 40, Condition.DownedQueenBee);
 		AddItemToShop(anglerShop, ItemID.HoneyAbsorbantSponge, 40, Condition.DownedQueenBee);
-		AddItemToShop(anglerShop, ItemID.BottomlessBucket, 40);
-		AddItemToShop(anglerShop, ItemID.SuperAbsorbantSponge, 40);
+		AddItemToShop(anglerShop, ItemID.BottomlessLavaBucket, 40);
+  		AddItemToShop(anglerShop, ItemID.MagicConch, 40);
+  		AddItemToShop(anglerShop, ItemID.DemonConch, 40);
+		AddItemToShop(anglerShop, ItemID.LavaAbsorbantSponge, 40);
   		AddItemToShop(anglerShop, ItemID.CanOfWorms, 15);
 		AddItemToShop(anglerShop, ItemID.FinWings, 40, Condition.Hardmode);
 		AddItemToShop(anglerShop, ItemID.HotlineFishingHook, 40, Condition.Hardmode);

@@ -17,6 +17,8 @@ This will enable a custom currency that the Angler shop uses and which you can g
 - Lava absorbant sponge
 - Bottomless lava bucket
 - Bottomless Shimmer bucket
+- Magic Conch
+- Demon Conch
 
 *2) Adds a fishing quest counter to the Angler's dialogue box showing how many quests have been completed
 

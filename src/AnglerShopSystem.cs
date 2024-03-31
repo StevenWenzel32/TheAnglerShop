@@ -39,6 +39,7 @@ public class AnglerShopSystem : ModSystem
 		AddItemToShop(anglerShop, ItemID.HoneyAbsorbantSponge, 40, Condition.DownedQueenBee);
 		AddItemToShop(anglerShop, ItemID.BottomlessBucket, 40);
 		AddItemToShop(anglerShop, ItemID.SuperAbsorbantSponge, 40);
+  		AddItemToShop(anglerShop, ItemID.CanOfWorms, 15);
 		AddItemToShop(anglerShop, ItemID.FinWings, 40, Condition.Hardmode);
 		AddItemToShop(anglerShop, ItemID.HotlineFishingHook, 40, Condition.Hardmode);
 		AddItemToShop(anglerShop, ItemID.ChumBucket, 5, Condition.BloodMoon);

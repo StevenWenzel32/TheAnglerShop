@@ -17,7 +17,7 @@ internal class NoFishingQuests : Mod
 		base.Load();
 	}
 
-	private void AddAnglerCoinToQuestReward(On_Player.orig_GetAnglerReward orig, Player self, NPC angler, int questItemType)
+	private static void AddAnglerCoinToQuestReward(On_Player.orig_GetAnglerReward orig, Player self, NPC angler, int questItemType)
 	{
 		orig(self, angler, questItemType);
 

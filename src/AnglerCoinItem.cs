@@ -26,7 +26,7 @@ public class AnglerCoinItem : ModItem
 		Terraria.UI.On_ItemSlot.PickItemMovementAction += AllowCoinSlotPlacement;
 	}
 
-	private int AllowCoinSlotPlacement(Terraria.UI.On_ItemSlot.orig_PickItemMovementAction orig, Item[] inv, int context, int slot, Item checkItem)
+	private static int AllowCoinSlotPlacement(Terraria.UI.On_ItemSlot.orig_PickItemMovementAction orig, Item[] inv, int context, int slot, Item checkItem)
 	{
 		if (context == 1 && checkItem.type == ModContent.ItemType<AnglerCoinItem>()) {
 			return 0;
